@@ -1,15 +1,41 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Page Title</title>
+    <title>Trivia Battle Game</title>
+    <link rel="stylesheet" href="trivia_battle_game.css">
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
 </head>
+
 <body>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value=""><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value=""><br><br>
+    <button id="button">Button</button>
 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
+    <h2 id="my-heading"></h2>
+    <p id="displayFname"></p>
+    <p id="displayLname"></p>
 
-<script src="trivia_battle_game.js"></script>
+    <div class="hidden">
+        <label for="category">Choose a category:</label>
+        <select id="category" name="category">
+            <option value="music">Music</option>
+            <option value="history">History</option>
+            <option value="science">Science</option>
+            <!-- Add more categories as needed -->
+        </select>
+        <form id="category-form">
+            <button type="submit">Get Questions</button>
+        </form>
+    </div>
 
+    <script src="trivia_battle_game.js"></script>
 </body>
-</html>
 
+</html>
