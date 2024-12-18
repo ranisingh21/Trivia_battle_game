@@ -4,35 +4,35 @@
 <head>
     <title>Trivia Battle Game</title>
     <link rel="stylesheet" href="trivia_battle_game.css">
-    <style>
-        .hidden {
-            display: none;
-        }
-    </style>
 </head>
 
 <body>
-    <label for="fname">First name:</label><br>
-    <input type="text" id="fname" name="fname" value=""><br>
-    <label for="lname">Last name:</label><br>
-    <input type="text" id="lname" name="lname" value=""><br><br>
+    <label id = "fhide" for="fname">First name:
+        <input type="text" id="fname" name="fname" value="">
+    </label>
+    <label  id = "lhide" for="lname">Last name:
+        <input type="text" id="lname" name="lname" value="">
+    </label>
     <button id="button">Button</button>
-
     <h2 id="my-heading"></h2>
     <p id="displayFname"></p>
     <p id="displayLname"></p>
-
-    <div class="hidden">
-        <label for="category">Choose a category:</label>
-        <select id="category" name="category">
-            <option value="music">Music</option>
-            <option value="history">History</option>
-            <option value="science">Science</option>
-            <!-- Add more categories as needed -->
-        </select>
-        <form id="category-form">
-            <button type="submit">Get Questions</button>
-        </form>
+    <div>
+        <div class="hidden">
+            <form id="category-form">
+                <label for="category">Choose a category:</label>
+                <select id="category" name="category">
+                 <option value="science">Science</option>
+                 <option value="history">History</option>
+                 <option value="history">geography</option>
+                <option value="history">society_and_culture</option>
+                <option value="history">film_and_tv</option>
+                 <option value="history">general_knowledge</option>
+                 <option value="history">sport_and_leisure</option>
+                </select>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
     </div>
 
     <script src="trivia_battle_game.js"></script>
